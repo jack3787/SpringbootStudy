@@ -7,7 +7,7 @@ import java.util.*;
 public class MemoryMemberRepository implements  MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();
-    private static long sequence = 0L;
+    private static long sequence = 0L; //0, 1, 2 key 값을 생성해준다.
 
     @Override
     public Member save(Member member) {
@@ -33,4 +33,7 @@ public class MemoryMemberRepository implements  MemberRepository {
         return new ArrayList<>(store.values());
     }
 
+    public void clearStore() {
+        store.clear(); //store를 비움
+    }
 }
