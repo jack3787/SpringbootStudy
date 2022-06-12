@@ -34,6 +34,6 @@ public class MemoryMemberRepository implements  MemberRepository {
     }
 
     public void clearStore() {
-        store.clear(); //store를 비움
+        store.clear(); // store를 비움
     }
 }
