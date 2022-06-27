@@ -1,5 +1,6 @@
-package com.example.practiceboot_put;
+package com.example.practiceboot_put.controller;
 
+import com.example.practiceboot_put.dto.PostRequestDto;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PutApiController {
 
     @PutMapping("/put")
-    public PostRequestDto_Put put(@RequestBody PostRequestDto_Put requestDto_put){
+    public PostRequestDto put(@RequestBody PostRequestDto requestDto_put){
         System.out.println(requestDto_put);
         return requestDto_put;
     }
