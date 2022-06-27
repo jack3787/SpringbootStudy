@@ -1,4 +1,4 @@
-package com.example.practiceboot_put;
+package com.example.practiceboot_put.dto;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import java.util.List;
 
 @JsonNaming(value = PropertyNamingStrategy.SnakeCaseStrategy.class)
-public class PostRequestDto_Put {
+public class PostRequestDto {
 
     private String name;
     private int age;

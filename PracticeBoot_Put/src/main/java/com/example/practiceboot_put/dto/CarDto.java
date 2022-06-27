@@ -1,4 +1,4 @@
-package com.example.practiceboot_put;
+package com.example.practiceboot_put.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
